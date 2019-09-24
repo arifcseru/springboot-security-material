@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title>Material Design Bootstrap</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"></link>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet"></link>
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet"></link>
+    </head>
+
+    <body>
+<nav class="navbar navbar-expand-lg navbar-dark indigo mb-4">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">Navbar</a>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="registration">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin">Login</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline ml-auto">
+                    <div class="md-form my-0">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search"/>
+                    </div>
+                    <button href="#!" class="btn btn-outline-white btn-md my-0 ml-sm-2" type="submit">Search</button>
+                </form>
+
+            </div>
+            <!-- Collapsible content -->
+
+        </nav>
+<!--/.Navbar-->
+        <!-- Start your project here-->
+        <div style="height: 110vh">
+            <!--div class="flex-center flex-column">
+        
+              <h1 class="text-hide animated fadeIn mb-4"
+                style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
+                MDBootstrap</h1>
+              <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+        
+              <p class="animated fadeIn text-muted">MDB Team</p>
+                  
+            </div-->
+            <div class="container flex-center flex-column">
+                <div class="row">
+                <!-- Material form register -->
+                <div class="card">
+
+                    <h5 class="card-header info-color white-text text-center py-4">
+                        <strong>Sign up</strong>
+                    </h5>
+
+                    <!--Card content-->
+                    <div class="card-body px-lg-5 pt-0">
+
+                        <!-- Form -->
+                        <form class="text-center" style="color: #757575;" action="#!">
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <!-- First name -->
+                                    <div class="md-form">
+                                        <input type="text" id="materialRegisterFormFirstName" class="form-control"/>
+                                        <label for="materialRegisterFormFirstName">First name</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!-- Last name -->
+                                    <div class="md-form">
+                                        <input type="email" id="materialRegisterFormLastName" class="form-control"/>
+                                        <label for="materialRegisterFormLastName">Last name</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!-- Last name -->
+                                    <div class="md-form">
+                                        <input type="email" id="materialRegisterFormLastName2" class="form-control"/>
+                                        <label for="materialRegisterFormLastName2">Nick name</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- E-mail -->
+                            <div class="md-form mt-0">
+                                <input type="email" id="materialRegisterFormEmail" class="form-control"/>
+                                <label for="materialRegisterFormEmail">E-mail</label>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="md-form">
+                                <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock"/>
+                                <label for="materialRegisterFormPassword">Password</label>
+                                <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                    At least 8 characters and 1 digit
+                                </small>
+                            </div>
+
+                            <!-- Phone number -->
+                            <div class="md-form">
+                                <input type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock"/>
+                                <label for="materialRegisterFormPhone">Phone number</label>
+                                <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                                    Optional - for two step authentication
+                                </small>
+                            </div>
+
+                            <!-- Newsletter -->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter"/>
+                                <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our newsletter</label>
+                            </div>
+
+                            <!-- Sign up button -->
+                            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+
+                            <!-- Social register -->
+                            <p>or sign up with:</p>
+
+                            <a type="button" class="btn-floating btn-fb btn-sm">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-tw btn-sm">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-li btn-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-git btn-sm">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <hr/>
+
+                            <!-- Terms of service -->
+                            <p>By clicking
+                                <em>Sign up</em> you agree to our
+                                <a href="" target="_blank">terms of service</a>
+                            </p>
+                            <p>Already registered?
+                                <a href="signin">Login</a>
+                            </p>
+
+                        </form>
+                        <!-- Form -->
+
+                    </div>
+
+                </div>
+                </div>
+                <!-- Material form register -->
+            </div>
+        </div>
+        <!-- Start your project here-->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+    </body>
+
+</html>
